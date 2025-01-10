@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZhubOfficial</title>
+    <title>MM2 Page - ZhubOfficial</title>
     <style>
         /* Basic Reset */
         * {
@@ -18,13 +18,21 @@
             font-family: Arial, sans-serif;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;  /* Pushes footer to the bottom */
+            justify-content: space-between;  /* Ensures footer stays at the bottom */
             align-items: center;
             background-color: #e0f7fa; /* Light Blue Background */
             color: #333;
         }
 
         /* Centered Container */
+        .content-wrapper {
+            display: flex;
+            flex: 1;  /* Takes up the remaining space between header and footer */
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+
         .container {
             text-align: center;
             background-color: white;
@@ -33,7 +41,6 @@
             padding: 40px;
             max-width: 90%;
             width: 500px;
-            margin-top: 30px;
         }
 
         h1 {
@@ -78,13 +85,16 @@
 </head>
 <body>
 
-    <!-- Centered Content Container -->
-    <div class="container">
-        <h1>Welcome to Zhub Official</h1>
-        <p>Click the button below to join our Discord server and connect with the community!</p>
-        
-        <!-- Discord Invite Button -->
-        <a href="https://discord.gg/8g7xs4j2Bm" class="discord-button" target="_blank">Join Our Discord</a>
+    <!-- Content Wrapper for Centering -->
+    <div class="content-wrapper">
+        <!-- Centered Content Container -->
+        <div class="container">
+            <h1>Welcome to the MM2 Page</h1>
+            <p>Click the button below to join our Discord server and connect with the community!</p>
+
+            <!-- Discord Invite Button -->
+            <a href="https://discord.gg/8g7xs4j2Bm" class="discord-button" target="_blank">Join Our Discord</a>
+        </div>
     </div>
 
     <!-- Footer at the Bottom -->
