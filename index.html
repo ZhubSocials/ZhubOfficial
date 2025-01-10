@@ -17,7 +17,8 @@
             height: 100%;
             font-family: Arial, sans-serif;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;  /* Pushes footer to the bottom */
             align-items: center;
             background-color: #e0f7fa; /* Light Blue Background */
             color: #333;
@@ -32,6 +33,7 @@
             padding: 40px;
             max-width: 90%;
             width: 500px;
+            margin-top: 30px;
         }
 
         h1 {
@@ -64,18 +66,19 @@
 
         /* Footer */
         footer {
-            margin-top: 30px;
-            color: #888;
-        }
-
-        footer p {
-            font-size: 1em;
+            width: 100%;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            font-size: 0.9em;
         }
 
     </style>
 </head>
 <body>
 
+    <!-- Centered Content Container -->
     <div class="container">
         <h1>Welcome to Zhub Official</h1>
         <p>Click the button below to join our Discord server and connect with the community!</p>
@@ -84,6 +87,7 @@
         <a href="https://discord.gg/8g7xs4j2Bm" class="discord-button" target="_blank">Join Our Discord</a>
     </div>
 
+    <!-- Footer at the Bottom -->
     <footer>
         <p>&copy; 2025 ZhubOfficial. All rights reserved.</p>
     </footer>
